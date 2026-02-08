@@ -19,7 +19,8 @@
   border-radius: 15px;
   padding: 20px;
   padding-right: 6vw;  
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+  box-shadow: 
+    0 0 37px rgba(218, 137, 255, 0.35);
 }
 
 .item2 {

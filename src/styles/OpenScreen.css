@@ -41,11 +41,16 @@
   }
 
 .saying {
-  background-color: rgba(0, 0, 0, 0.7);
+  /* background-color: rgba(0, 0, 0, 0.7); */
   border-radius: 15px;
   padding: 20px;
   text-align: center;
   width: 50%;
+    background: rgba(20, 17, 16, 0.61); /* #141110 at 61% */
+  border-radius: 30px;
+
+  box-shadow: 
+    0 0 37px rgba(218, 137, 255, 0.35);
 }
 
 .saying h3 {
@@ -67,7 +72,7 @@
   transform: translateX(-50%);
   width: 125px; 
   height: 1px; 
-  background-color: #FF4500; 
+  /* background-color: #FF4500;  */
 }
 
 .saying p {
@@ -82,4 +87,34 @@
 .quote2 {
   padding: 0.4rem;
   transform: rotate(180deg);
+}
+
+/* Smooth transitions for size changes */
+.saying {
+  transition: width 200ms ease, padding 200ms ease, transform 200ms ease;
+}
+
+/* Shrink the saying box on smaller screens */
+@media (max-width: 1300px) {
+  .saying {
+    width: 80%;
+    max-width: 700px;
+    padding: 14px;
+    box-shadow: 0 0 18px rgba(218, 137, 255, 0.22);
+  }
+
+  .saying h3 { font-size: 1.2rem; }
+  .saying p  { font-size: 1rem; line-height: 1.4; }
+}
+
+@media (max-width: 600px) {
+  .saying {
+    width: 90%;
+    max-width: 700px;
+    padding: 14px;
+    box-shadow: 0 0 18px rgba(218, 137, 255, 0.22);
+  }
+
+  .saying h3 { font-size: 1.1rem; }
+  .saying p  { font-size: 0.8rem; line-height: 1.3; }
 }

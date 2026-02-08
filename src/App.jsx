@@ -19,6 +19,8 @@ import MiktzotScreen from "./components/MiktzotScreen.jsx";
 import MifkadaScreen from "./components/MifkadaScreen.jsx";
 import BottomNav from "./components/BottomNav.jsx";
 
+import elipse44 from './assets/ellipse44.svg';
+
 function App() {
   const [showContent, setShowContent] = useState(true);
   const [page, setPage] = useState("home");
@@ -70,13 +72,17 @@ function App() {
         alt="bhd14Graphic"
         className={`bhd14Graphic ${showAnimation ? "animate" : ""}`} 
       /> */}
-
+            <img
+        src={elipse44}
+        alt="bhd14Graphic"
+        className="ellipse44"
+      />
               {showContent && (
                 <>
                   <SideNav />
                   <TopNav onNavigate={handlePageChange} activePage={page} />
 
-                  <h1 className="sentence">תמיד בחזית, הנדסה צבאית</h1>
+                  {/* <h1 className="sentence">תמיד בחזית, הנדסה צבאית</h1> */}
                   {page === "home" && <OpenScreen />}
                   {page === "bach" && <BachScreen />}
                   {page === "gdodha" && <GdodHaScreen />}
