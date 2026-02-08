@@ -13,10 +13,14 @@ import bhd14Graphic from './assets/graphicbhd14.svg';
 
 import SideNav from './components/SideNav.jsx';
 import OpenScreen from "./components/OpenScreen.jsx";
-import BachScreen from "./components/BachScreen.jsx";
-import GdodHaScreen from "./components/GdodHaScreen.jsx";
-import MiktzotScreen from "./components/MiktzotScreen.jsx";
-import MifkadaScreen from "./components/MifkadaScreen.jsx";
+// import BachScreen from "./components/LishcaScreen.jsx";
+// import GdodHaScreen from "./components/GdodHaScreen.jsx";
+// import MiktzotScreen from "./components/MiktzotScreen.jsx";
+// import MifkadaScreen from "./components/MifkadaScreen.jsx";
+import LishcaScreen from "./components/LishcaScreen.jsx";
+import PlugotLScreen from "./components/PlugotLScreen.jsx";
+import AgamScreen from "./components/AgamScreen.jsx";
+import PalsamScreen from "./components/PalsamScreen.jsx";
 import BottomNav from "./components/BottomNav.jsx";
 
 import elipse44 from './assets/ellipse44.svg';
@@ -84,10 +88,10 @@ function App() {
 
                   {/* <h1 className="sentence">תמיד בחזית, הנדסה צבאית</h1> */}
                   {page === "home" && <OpenScreen />}
-                  {page === "bach" && <BachScreen />}
-                  {page === "gdodha" && <GdodHaScreen />}
-                  {page === "miktzot" && <MiktzotScreen />}
-                  {page === "mifkada" && <MifkadaScreen />}
+                  {page === "bach" && <LishcaScreen />}
+                  {page === "gdodha" && <PlugotLScreen />}
+                  {page === "miktzot" && <AgamScreen />}
+                  {page === "mifkada" && <PalsamScreen />}
 
                   <BottomNav />
            
