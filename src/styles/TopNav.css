@@ -49,7 +49,7 @@ left: 12.5%;
 
 .item:not(.active):hover {
   transform: scale(1.1); 
-  color: #FF4500; 
+  color: #4e0455; 
   color:#B5B2B2;
 }
 
@@ -60,7 +60,7 @@ left: 12.5%;
   bottom: 8px; 
   width: 0;
   height: 2px;
-  background-color: #FF4500; 
+  background-color: #62107a; 
   transition: width 0.3s ease;
 }
 

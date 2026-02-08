@@ -1,10 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/TopNav.css"; 
-import bhd14logo from "../assets/bhd14logo.svg"; 
 import h607logo from "../assets/topnav/607.svg";
-import peleLogo from "../assets/pelelogo.svg";
-import bhd14Graphic from "../assets/Graphicbhd14.svg";
+import semel607 from "../assets/topnav/607semel.png";
+// import peleLogo from "../assets/pelelogo.svg";
+import peleLogo from "../assets/topnav/pele_logo.svg";
 import lishkaImg from "../assets/topnav/lishca1.svg";
 
 
@@ -58,7 +58,7 @@ function TopNav({ onNavigate, activePage }) {
             אג"ם
           </div>
         </div>
-        <img src={bhd14logo} alt="bhd14logo" className="bhd14logo" />
+        <img src={semel607} alt="bhd14logo" className="bhd14logo" />
       </>
     );
 }

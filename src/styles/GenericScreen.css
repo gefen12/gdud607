@@ -3,14 +3,13 @@
   position: absolute;
   z-index: 3;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  /* Removed fixed height/width to allow content to define size */
-  /* height: 23vh; */
-  /* width: 36vw; */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 40px; 
-  text-align: center;
+  /* text-align: center; */
   align-items: center;
-  justify-items: center; 
+  justify-items: center;
+  justify-content: center;
+  width: fit-content;
   color: white;
   font-family: 'rubik', sans-serif;
   transform: translate(-50%, -50%);
@@ -18,9 +17,7 @@
   top: 40vh;
   background-color: rgba(0, 0, 0, 0.7); 
   border-radius: 15px;
-  padding: 20px;
-  /* Adjust padding-right to be consistent with other padding if width is dynamic */
-  /* padding-right: 6vw;   */
+  padding: 24px 36px;
   box-shadow: 
     0 0 37px rgba(218, 137, 255, 0.35);
 }
@@ -31,7 +28,10 @@
   font-size: 1rem;
   font-weight: bold;
   text-align: right;
+  /* text-align: center; */
   cursor: pointer;
+  /* padding: 8px 32px; */
+  margin: 8px 24px;
 }
 
 .item2::after {
@@ -60,6 +60,18 @@
   text-decoration: none; /* Removes default underline */
 }
 
+/* Ensure the label inside the link is always white regardless of link state */
+.item3,
+.item3 .item2 {
+  color: #ffffff !important;
+}
+.item3:link .item2,
+.item3:visited .item2,
+.item3:hover .item2,
+.item3:active .item2 {
+  color: #ffffff !important;
+}
+
 /* Ensure the hover effect for the underline works correctly */
 .item3:hover .item2::after {
   width: 100%;
@@ -75,7 +87,7 @@
 @media (max-width: 1300px) {
   /* Update selector */
   .GenericScreen {
-    width: 70vw;
+    width: 50vw;
     min-width: 0;
     padding-right: 6vw;
   }

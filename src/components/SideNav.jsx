@@ -21,13 +21,22 @@ function SideNav() {
         <img src={graphIcon} alt="Graph" />
         <span>גרף</span>
       </div>
+      <div className="item-side">
+        <img src={privacyIcon} alt="Privacy" />
+        <span>תוכניות בטיחות</span>
+      </div>
+
+        <div className="item-side">
+        <img src={warIcon} alt="Calendar" />
+        <span>מורשת קרב</span>
+      </div>
       <div
         className="item-side files-item"
         onMouseEnter={() => setShowFilesOptions(true)}
         onMouseLeave={() => setShowFilesOptions(false)}
       >
         <img src={filesIcon} alt="Files" />
-        <span>תיקי יסוד</span>
+        <span>גלריה</span>
         {showFilesOptions && (
           <div className="dropdown">
             <div className="dropdown-item">
@@ -41,38 +50,6 @@ function SideNav() {
             </div>
           </div>
         )}
-      </div>
-      <div className="item-side">
-        <img src={privacyIcon} alt="Privacy" />
-        <span>הוראות ונהלים</span>
-      </div>
-      <div
-        className="item-side inspo-item"
-        onMouseEnter={() => setShowInspoOptions(true)}
-        onMouseLeave={() => setShowInspoOptions(false)}
-      >
-        <img src={inspoIcon} alt="Inspo" />
-        <span>חזון ויעדים</span>
-        {showInspoOptions && (
-          <div className="dropdown">
-            <div className="dropdown-item">
-            <span ><img className="arrow" src={arrow} alt="arrow"/></span> מצפן 
-            </div>
-            <div className="dropdown-item">
-            <span><img className="arrow" src={arrow} alt="arrow"/></span> יעוד 
-            </div>
-            <div className="dropdown-item">
-            <span><img className="arrow" src={arrow} alt="arrow"/></span> תכנית עבודה 
-            </div>
-            <div className="dropdown-item">
-            <span><img className="arrow" src={arrow} alt="arrow"/></span> ערכי ליבה 
-            </div>
-          </div>
-        )}
-      </div>
-        <div className="item-side">
-        <img src={warIcon} alt="Calendar" />
-        <span>חרבות ברזל</span>
       </div>
     </div>
   );
