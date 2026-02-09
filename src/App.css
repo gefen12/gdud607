@@ -54,7 +54,8 @@ html, body, #root {
   background-color: #141110;
   z-index: 1;
   /* opacity: 0.9; */
-  opacity: 0.85  ;
+  /* opacity: 0.85  ; */
+  opacity: 0.21;
   backdrop-filter: blur(10px);
   /* animation: fadeOutOpacity 2s ease-in-out forwards; */
   /* animation-delay: 1s; */
@@ -136,13 +137,12 @@ html, body, #root {
   position: absolute;
   bottom: -25%;
   right: -20%;
-  /* width: 150px; */
   width: 43%;
-  opacity: 0.5;
+  opacity: 0.7;
   z-index: 2;
   border-radius: 50%;
   box-shadow: 
-    0 0 37px rgba(218, 137, 255, 0.35);
+    0 0 37px rgba(218, 137, 255, 0.65);
 }
 
 

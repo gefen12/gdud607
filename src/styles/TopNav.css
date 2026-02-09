@@ -16,6 +16,8 @@ left: 12.5%;
   cursor: pointer;
   /* color: #FF4500;  */
   color: #B5B2B2;
+  /* color: #a87bd8; */
+  /* opacity: 0.9; */
   text-decoration: none;
   transition: transform 0.3s ease, color 0.3s ease;
 }

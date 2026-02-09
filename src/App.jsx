@@ -10,6 +10,7 @@ import BackGround4 from './assets/background4.jpg';
 import BackGround5 from './assets/background5.jpg';
 import BackGround6 from './assets/background6.jpg';
 import bhd14Graphic from './assets/graphicbhd14.svg';
+import BackGround607 from './assets/background607.jpg';
 
 import SideNav from './components/SideNav.jsx';
 import OpenScreen from "./components/OpenScreen.jsx";
@@ -30,7 +31,8 @@ function App() {
   const [page, setPage] = useState("home");
   const [currentBackground, setCurrentBackground] = useState(0);
   const [showAnimation, setShowAnimation] = useState(true);
-  const backgrounds = [BackGround, BackGround2, BackGround3, BackGround4, BackGround5, BackGround6];
+  // const backgrounds = [BackGround, BackGround2, BackGround3, BackGround4, BackGround5, BackGround6];
+  const backgrounds = [BackGround607];
 
   useEffect(() => {
     const timer = setTimeout(() => {
